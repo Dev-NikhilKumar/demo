@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Service
-public class DemoController {
+public class DemoService {
 
     public List<String> toList(String str){
         if (str == null || str.isBlank()) {
