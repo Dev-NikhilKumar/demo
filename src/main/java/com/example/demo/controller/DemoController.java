@@ -15,6 +15,7 @@ public class DemoController {
     public List<String> toList(@RequestBody String str){
         if (str == null || str.isBlank()) {
             return Collections.emptyList();
+            //mauja
         }
 
         return Arrays.stream(str.split(","))
