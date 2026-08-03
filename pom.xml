@@ -49,6 +49,11 @@
             <name>GitHub Packages</name>
             <url>https://maven.pkg.github.com/Dev-NikhilKumar/demo</url>
         </repository>
+        <snapshotRepository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Dev-NikhilKumar/demo</url>
+        </snapshotRepository>
     </distributionManagement>
 
 </project>
