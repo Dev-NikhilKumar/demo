@@ -1,5 +1,6 @@
-package com.example.demo.controller;
+package com.example.demo.service;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,11 +9,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-@RestController
+@Service
 public class DemoController {
 
-    @PostMapping("/demo")
-    public List<String> toList(@RequestBody String str){
+    public List<String> toList(String str){
         if (str == null || str.isBlank()) {
             return Collections.emptyList();
             //mauja
